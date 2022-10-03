@@ -1,0 +1,81 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 209);
+  
+    /*background: url('../img/admin/1614673762_61-p-fon-dlya-sportivnoi-afishi-69.jpg')*/
+}
+.box {
+  max-width: 900px;
+  background-color: rgb(101, 128, 148);
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgb(198, 206, 159);
+}
+p,
+h2 {
+  font-weight: 200;
+  text-align: center;
+}
+#four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+ 
+  border-radius: 5px;
+  max-width: 850px;
+  background-color: rgb(196, 202, 166);
+  padding-bottom: 40px ;
+}
+button {
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+input {
+  width: 93%;
+  height: 40px;
+  margin: 10px 25px;
+  border-radius: 5px;
+  border: solid gray 1px;
+}
+label {
+  margin-left: 25px;
+}
+#catalogResetButton {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(212, 203, 147);
+  border: solid gray 1px;
+}
+#catalogResetButton:hover {
+  transition: 2s;
+  background-color:white;
+} 
+.special {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(212, 203, 147);
+  margin-left: 25px;
+  border: solid gray 1px;
+}
+.special:hover {
+  transition: 2s;
+  background-color:white;
+}
+#catalogBtn {
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(212, 203, 147);
+  border: solid gray 1px;
+}
+#catalogBtn:hover {
+  transition: 2s;
+  background-color:white; 
+}

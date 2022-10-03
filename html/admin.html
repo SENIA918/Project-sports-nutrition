@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/admin.css" />
+  <title>Admin</title>
+  <link rel="icon" href="../img/icons/weightliftsport_weightlift_13267.png" sizes="50x50" type="img/icon.png">
+</head>
+<body>
+    <div class="box">
+      <section id="four">
+        <div class="container" id="contactForm">
+          <h2>Каталог</h2>
+          <p>Ввод карточки:</p>
+          <form method="POST" action="#">
+            <label for="">Cсылка картинки:</label>
+            <input type="text" name="img" id="catalogImg" required />
+            <label for="">Название товара:</label>
+            <input type="text" name="name" id="catalogName"required  />
+            <label for="">Описание товара:</label>
+            <input type="text" name="description" id="catalogDescription" required />
+            <label for="">Цена:</label>
+            <input type="text" name="price" id="catalogPrace" required ></input>
+            <button type="submit" class="special" onclick="return saveToFirebase(event)" id="contactSendButton">Отправить</button>
+            <button type="reset" id="catalogResetButton">Сбросить</button>
+          </form>
+          </div>
+          <div class="container" id="contactResult"></div>
+          <button id="catalogBtn" type="submit" onclick="return getCatalog(),getConsultation(),getRegistration()">Oбновить</button>
+          <br>
+          <br>
+          <h2>Отправленные данные по каталогу</h2>
+          <div id="resultMessages"></div>
+          <h2>Консультация</h2>
+          <div id="resultMessagesCons"></div>
+          <h2>Регистрация</h2>
+          <div id="resultMessagesRegistration"></div>
+        </div>
+      </section>
+    </div>
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>
